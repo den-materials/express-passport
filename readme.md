@@ -1,4 +1,5 @@
 <!--Had to start at 1:30 -->
+<!-- 11:56 WDI 6 started at 11:05-->
 
 <!--1:33 WDI 3 -->
 
@@ -187,6 +188,7 @@ Now, inside this callback method, we will implement our custom logic to signup a
 ```
 
 <!--2:06 WDI4-->
+<!-- 11:56 WDI 6 passed to devs-->
 
 First we try to find the email in the database.
 
@@ -236,6 +238,9 @@ In the `users.js` controller, for the method `postSignup`, we will add the call 
   }
 ```
 
+<!-- 12:28 WDI 6 passed to devs-->
+
+
 Here we are calling the method `authenticate` (given to us by passport) and then telling passport which strategy (`'local-signup'`) to use.
 
 The second argument tells passport what to do in case of a success or failure.
@@ -279,6 +284,7 @@ The second method will then be called every time there is a value for passport i
 <!--WDI4 2:22 turning over to devs -->
 <!--WDI4 2:26 -->
 <!--WDI4 by the time we debugged all but one (goddammit, why all but one?) issue it was 3:30, with break time 3:02-3:15-->
+<!-- WDI6 turned over to devs -->
 
 <!--1:55 5 minutes -->
 
@@ -320,6 +326,7 @@ Now, let's start up the app using `nodemon app.js` and visit `http://localhost:3
 
 <!--WDI5 2:48 -->
 <!-- 2:05 5 minutes -->
+<!-- 1:56 turning over to devs -->
 
 ## Test it out - Independent Practice
 
@@ -335,10 +342,10 @@ All the logic for the signup is now set - you should be able to go to `/signup` 
 <!-- 2:10 15 minutes -->
 
 ## Sign-in - Codealong
-
+<!-- 2:30 WDI6 passed over to devs for the whole sign in section -->
 Now we need to write the `signin` logic.
 
-We also need to implement a custom strategy for the login. In `passport.js`, after the signup strategy, add a new LocalStrategy:
+We also need to implement a custom strategy for the login. In `config/passport.js`, after the signup strategy, add a new LocalStrategy:
 
 ```javascript
   passport.use('local-login', new LocalStrategy({
@@ -503,6 +510,7 @@ Now in the header partial, we can add:
 
 <!--4:00 WDI5 -->
 <!--2:30 5 minutes -->
+<!-- 3:27 WDI6 turned over to devs -->
 
 ## Signout - Codealong
 
